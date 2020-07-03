@@ -44,7 +44,7 @@ function setup(){
 
     bird = new Bird(200,50);
 
-    //log6 = new Log(230,180,80, PI/2);
+    log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(bird.body,{x:200, y:50});
 }
 
@@ -54,7 +54,7 @@ function draw(){
     background(bgImg);
     text("score"+score,width-300,50)
     Engine.update(engine);
-    //strokeWeight(4);
+    strokeWeight(4);
     box1.display();
     box2.display();
     ground.display();
@@ -63,7 +63,7 @@ function draw(){
     log1.display();
 
     box3.display();
-    //box4.display();
+    box4.display();
     pig3.display();
     pig3.score()
     log3.display();
@@ -74,7 +74,7 @@ function draw(){
 
     bird.display();
     platform.display();
-    //log6.display();
+    log6.display();
     slingshot.display();    
 }
 
